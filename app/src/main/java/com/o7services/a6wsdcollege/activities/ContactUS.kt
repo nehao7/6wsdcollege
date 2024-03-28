@@ -24,7 +24,7 @@ class ContactUS : AppCompatActivity() {
         }
 
         binding.tvphone1.setOnClickListener {
-            val phoneNumber = "9914641645" // Replace this with the desired phone number
+            val phoneNumber = "8195869033" // Replace this with the desired phone number
             val intent = Intent(Intent.ACTION_DIAL)
             intent.data = Uri.parse("tel:$phoneNumber")
             this.startActivity(intent)
