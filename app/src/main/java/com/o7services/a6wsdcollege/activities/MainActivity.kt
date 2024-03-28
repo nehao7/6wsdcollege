@@ -1,28 +1,30 @@
-package com.o7services.a6wsdcollege
+package com.o7services.a6wsdcollege.activities
 
 import android.os.AsyncTask
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract.CommonDataKinds.Note
 import android.widget.TextView
+import com.o7services.a6wsdcollege.ClgDatabase
+import com.o7services.a6wsdcollege.entities.NotesEntity
+import com.o7services.a6wsdcollege.R
+import com.o7services.a6wsdcollege.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var notesDatabase : NotesDatabase
+    lateinit var binding: ActivityMainBinding
+    lateinit var notesDatabase : ClgDatabase
     lateinit var tvInsert: TextView
     var notesList = arrayListOf<NotesEntity>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        notesDatabase = NotesDatabase.getNotesInstance(this)
-        tvInsert = findViewById(R.id.tvInsert)
-
+        binding= ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        notesDatabase = ClgDatabase.getClgInstance(this)
         getNotes()
-
-        tvInsert.setOnClickListener {
+        binding.btnAdd.setOnClickListener {
             class insertClass : AsyncTask<Void, Void, Void>() {
                 override fun doInBackground(vararg p0: Void?): Void? {
                     var entity = NotesEntity(notesTitle = "This is testing", notesDescription = "Description")
-                    notesDatabase.notesDao().insertNotes(entity)
+                    notesDatabase.clgDao().insertNotes(entity)
                     return null
                 }
             }
@@ -32,11 +34,12 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
     fun getNotes(){
         class getNotesDb : AsyncTask<Void, Void, List<NotesEntity>>() {
             override fun doInBackground(vararg p0: Void?): List<NotesEntity> {
 //                notesList.addAll()
-                return notesDatabase.notesDao().getNotesList()
+                return notesDatabase.clgDao().getNotesList()
             }
 
             override fun onPostExecute(result: List<NotesEntity>?) {
@@ -44,7 +47,6 @@ class MainActivity : AppCompatActivity() {
                 notesList.addAll(result?: arrayListOf())
             }
         }
-
         getNotesDb().execute()
     }
 }

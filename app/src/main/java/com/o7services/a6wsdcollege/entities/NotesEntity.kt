@@ -1,4 +1,4 @@
-package com.o7services.a6wsdcollege
+package com.o7services.a6wsdcollege.entities
 
 import androidx.room.Dao
 import androidx.room.Entity

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pcmsd4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/logo"
+        android:layout_marginRight="295dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prem Chand Markanda S.D. College for Women,"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="#F10052"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintEnd_toEndOf="@id/image1"
+        app:layout_constraintTop_toBottomOf="@id/image1"
+        app:layout_constraintBottom_toTopOf="@id/image1"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jalandhar"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginLeft="98dp"
+        android:textColor="#F10052"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintBottom_toTopOf="@id/tv1"
+        android:layout_marginTop="55dp"/>
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(Re-Accreditedwith‘A+’grade by NAAC)"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#F10052"
+        android:layout_marginLeft="98dp"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintBottom_toTopOf="@id/tv2"
+        android:layout_marginTop="53dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="186dp"
+        android:layout_height="531dp"
+        android:background="@drawable/background2"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/achievements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:text="Achievements"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ourVision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Our Vision"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/courses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Courses"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ourObjective"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Our Objective"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/PhotoGallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Photo Gallery"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/alumni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Alumni&amp;Placements"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contactUs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:padding="10dp"
+            android:text="Contact Us"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imagepresident"
+        android:layout_width="158dp"
+        android:layout_height="143dp"
+        android:src="@drawable/president"
+        app:layout_constraintTop_toBottomOf="@+id/tv3"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="200dp"/>
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Spreading education among masses is perhaps the greatest gift one can give to society as it enlightens and empowers people, humanizes them and lends meaning to their existence and thereby brings peace and prosperity in society and makes this universe more liveable. Since its inception in 1973, Prem Chand Markanda S.D. College for Women, Jalandhar has been serving the humanity by providing high-quality education at the most affordable cost."
+        app:layout_constraintTop_toBottomOf="@+id/imagepresident"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="200dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

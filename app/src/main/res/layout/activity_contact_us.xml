@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B1C9EF"
+    tools:context=".activities.ContactUS">
+
+    <TextView
+        android:id="@+id/tvcontactus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTACT US"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#395886"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telephone"
+        android:drawablePadding="4dp"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvcontactus"
+        android:layout_marginTop="@dimen/margin_20dp"/>
+
+    <TextView
+        android:id="@+id/tvphone1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:drawableLeft="@drawable/baseline_add_call_24"
+        android:text="+91-181-2455122 "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvphone"
+        app:layout_constraintEnd_toEndOf="@id/tvphone"
+        android:layout_marginTop="@dimen/margin_10dp"/>
+
+    <TextView
+        android:id="@+id/tvemaillabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textSize="25dp"
+        android:gravity="start"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:textStyle="bold"
+        android:drawablePadding="2dp"
+        app:layout_constraintTop_toBottomOf="@id/tvphone1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_20dp"/>
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail:pcmsdcollege@yahoo.com"
+        android:drawableLeft="@drawable/baseline_attach_email_24"
+        android:textSize="20dp"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvemaillabel"
+        android:layout_marginTop="@dimen/margin_10dp"/>
+    <TextView
+        android:id="@+id/tvfacebooklabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook ID:"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvemail"
+        android:layout_marginTop="@dimen/margin_20dp"/>
+
+    <TextView
+        android:id="@+id/tvfacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pcmsdcollege@ymail.com"
+        android:textSize="20dp"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvfacebooklabel"
+        android:layout_marginTop="@dimen/margin_10dp"/>
+
+    <TextView
+        android:id="@+id/tvinstalabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Instagram:"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvfacebook"
+        android:layout_marginTop="@dimen/margin_20dp"/>
+
+    <TextView
+        android:id="@+id/tvinsta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/margin_20dp"
+        android:text="Instagram:pcmsdcollege@ymail.com"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/tvinstalabel"
+        android:layout_marginTop="@dimen/margin_10dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

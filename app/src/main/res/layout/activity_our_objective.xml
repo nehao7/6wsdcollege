@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OurObjective">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="-6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="Our Objective"
+                android:textColor="#D45E5E"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="8dp"
+                android:text="Our Mission &#38; Objective "
+                android:textSize="30sp"
+                app:layout_constraintTop_toBottomOf="@id/tv1" />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="600dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To foster quest for excellence by quality and value-based education."
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tv2"
+                app:layout_constraintEnd_toEndOf="@id/image"
+                />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="464dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv3"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To foster quest for excellence by quality and value-based education."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/image1"
+                app:layout_constraintTop_toBottomOf="@id/tv3" />
+
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="408dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv4"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To ensure holistic development of student’s personality by providing equal learning and growth opportunities."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/image2"
+                app:layout_constraintTop_toBottomOf="@id/tv4" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="352dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv5"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To inculcate moral, social and ethical value-system."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/image3"
+                app:layout_constraintTop_toBottomOf="@id/tv5" />
+
+            <ImageView
+                android:id="@+id/image4"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="288dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To inculcate moral, social and ethical value-system."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/image4"
+                app:layout_constraintTop_toBottomOf="@id/tv6" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="224dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To instill spiritual and secular spirit by developing faith and respect for all religions."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/image5"
+                app:layout_constraintTop_toBottomOf="@id/tv7" />
+
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="164dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To create informed and global citizens endowed with love and respect for the society and the nation."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/image6"
+                app:layout_constraintTop_toBottomOf="@id/tv8" />
+
+            <ImageView
+                android:id="@+id/image7"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="612dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintEnd_toStartOf="@+id/tv11"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To inculcate respect for humanity at large."
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@id/image7"
+                app:layout_constraintTop_toBottomOf="@id/tv9" />
+
+            <ImageView
+                android:id="@+id/image8"
+                android:layout_width="31dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="@dimen/margin_20dp"
+                android:src="@drawable/arrow"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image7" />
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:text="To sensitize and educate young learners about concern for environment."
+                android:textSize="16sp"
+                app:layout_constraintTop_toBottomOf="@id/tv10"
+                app:layout_constraintEnd_toEndOf="@id/image8" />
+
+            <ImageView
+                android:id="@+id/image9"
+                android:layout_width="222dp"
+                android:layout_height="120dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/pcmsd"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv11"
+                tools:layout_editor_absoluteX="123dp"
+                tools:layout_editor_absoluteY="560dp" />
+            <ImageView
+                android:id="@+id/image10"
+                android:layout_width="153dp"
+                android:layout_height="96dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/pcmsd2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image9" />
+
+            <ImageView
+                android:id="@+id/image11"
+                android:layout_width="173dp"
+                android:layout_height="99dp"
+                android:layout_margin="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/pcmsd3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
