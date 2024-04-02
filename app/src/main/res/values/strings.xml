@@ -2,4 +2,20 @@
     <string name="app_name">6wsdcollege</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="prem_chand_markanda_s_d_college_for_women">Prem Chand Markanda S.D. College for Women,</string>
+    <string name="jalandhar">Jalandhar</string>
+    <string name="re_accreditedwith_a_grade_by_naac">(Re-Accreditedwith‘A+’grade by NAAC)</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">enter your username</string>
+    <string name="user_gmail_com">user@gmail.com</string>
+    <string name="roll_number">Roll Number</string>
+    <string name="enter_roll_no">enter Roll no.</string>
+    <string name="password">Password</string>
+    <string name="_1234">1234@</string>
+    <string name="_12345678">12345678</string>
+    <string name="login1">Login</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="pcmsdcollege_ymail_com">pcmsdcollege@ymail.com</string>
 </resources>

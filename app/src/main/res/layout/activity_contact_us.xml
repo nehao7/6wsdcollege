@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:layout_gravity="center"
     android:layout_height="match_parent"
-    android:background="#B1C9EF"
+    android:background="@drawable/contact"
     tools:context=".activities.ContactUS">
 
     <TextView
@@ -15,8 +16,8 @@
         android:text="CONTACT US"
         android:textStyle="bold"
         android:textSize="40sp"
-        android:layout_marginTop="10dp"
-        android:textColor="#395886"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,9 +31,10 @@
         android:drawablePadding="4dp"
         android:paddingHorizontal="@dimen/margin_20dp"
         android:textSize="25dp"
+        android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tvcontactus"
-        android:layout_marginTop="@dimen/margin_20dp"/>
+        android:layout_marginTop="40dp"/>
 
     <TextView
         android:id="@+id/tvphone1"
@@ -43,6 +45,7 @@
         android:text="+91-181-2455122 "
         android:textSize="20dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@+id/tvphone"
         app:layout_constraintEnd_toEndOf="@id/tvphone"
         android:layout_marginTop="@dimen/margin_10dp"/>
@@ -57,6 +60,7 @@
         android:paddingHorizontal="@dimen/margin_20dp"
         android:textStyle="bold"
         android:drawablePadding="2dp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/tvphone1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,6 +72,7 @@
         android:text="E-mail:pcmsdcollege@yahoo.com"
         android:drawableLeft="@drawable/baseline_attach_email_24"
         android:textSize="20dp"
+        android:textColor="@color/white"
         android:paddingHorizontal="@dimen/margin_20dp"
         android:gravity="center_vertical"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,27 +87,44 @@
         android:paddingHorizontal="@dimen/margin_20dp"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvemail"
         android:layout_marginTop="@dimen/margin_20dp"/>
+
+    <ImageView
+        android:id="@+id/imgfacebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintTop_toBottomOf="@+id/tvfacebooklabel"/>
 
     <TextView
         android:id="@+id/tvfacebook"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="pcmsdcollege@ymail.com"
+        android:textColor="@color/white"
+        android:text="@string/pcmsdcollege_ymail_com"
         android:textSize="20dp"
         android:paddingHorizontal="@dimen/margin_20dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintStart_toStartOf="@+id/imgfacebook"
         app:layout_constraintTop_toBottomOf="@id/tvfacebooklabel"
         android:layout_marginTop="@dimen/margin_10dp"/>
 
+    <ImageView
+        android:id="@+id/imginstagram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/instagram"
+        app:layout_constraintTop_toBottomOf="@+id/tvinstalabel"/>
     <TextView
         android:id="@+id/tvinstalabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Instagram:"
+        android:textColor="@color/white"
         android:paddingHorizontal="@dimen/margin_20dp"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -114,9 +136,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/margin_20dp"
-        android:text="Instagram:pcmsdcollege@ymail.com"
+        android:text="pcmsdcollege@ymail.com"
         android:textSize="20dp"
         android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/tvinstalabel"
         android:layout_marginTop="@dimen/margin_10dp"/>
 

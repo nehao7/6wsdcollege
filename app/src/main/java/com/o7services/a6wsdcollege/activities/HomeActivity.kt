@@ -25,30 +25,30 @@ class HomeActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        binding.achievements.setOnClickListener {
+        binding.achievement.setOnClickListener {
             startActivity(Intent(this,AchievementsActivity::class.java))
-        }
-        binding.alumni.setOnClickListener {
+    }
+      binding.alumni.setOnClickListener {
             startActivity(Intent(this,PlacementsAlumniActivity::class.java))
         }
-        binding.ourObjective.setOnClickListener {
-            startActivity(Intent(this,OurObjective::class.java))
-        }
 
-        binding.ourVision.setOnClickListener {
+        binding.tvourpride.setOnClickListener{
+            startActivity(Intent(this,OurPrides::class.java))
+        }
+        binding.ourvision.setOnClickListener {
             startActivity(Intent(this,OurVisionActivity::class.java))
         }
         binding.courses.setOnClickListener {
             startActivity(Intent(this,CoursesActivity::class.java))
         }
 
-        binding.ourObjective.setOnClickListener {
+        binding.ourobjective.setOnClickListener {
             startActivity(Intent(this,OurObjective::class.java))
         }
         binding.PhotoGallery.setOnClickListener {
             startActivity(Intent(this,PhotoGallery::class.java))
         }
-        binding.contactUs.setOnClickListener {
+        binding.contactus.setOnClickListener {
             startActivity(Intent(this,ContactUS::class.java))
         }
     }

@@ -11,7 +11,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FBC4AB"
+        android:background="#B1C9EF"
         android:padding="20dp">
 
     <TextView
@@ -21,7 +21,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="Our vision"
-        android:textColor="#D45E5E"
+        android:textColor="#395886"
         android:textSize="50dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,6 +47,7 @@
         android:gravity="center"
         android:text="DO"
         android:textSize="30dp"
+        android:textColor="#395886"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/image"
         android:layout_margin="20dp"
@@ -70,6 +71,7 @@
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:text="YOUR"
+        android:textColor="#395886"
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tv3"
@@ -96,6 +98,7 @@
         android:gravity="center"
         android:text="JOB"
         android:textSize="30dp"
+        android:textColor="#395886"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/tv5"
         android:layout_margin="20dp"
@@ -121,6 +124,7 @@
         android:text="WELL"
         android:textSize="30dp"
         android:textStyle="bold"
+        android:textColor="#395886"
         app:layout_constraintTop_toBottomOf="@id/tv7"
         android:layout_margin="20dp"
         />

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="#FBC4AB"
+    android:background="#B1C9EF"
     android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -23,10 +23,10 @@
         android:id="@+id/tv1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Prem Chand Markanda S.D. College for Women,"
+        android:text="@string/prem_chand_markanda_s_d_college_for_women"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginLeft="88dp"
+        android:layout_marginStart="88dp"
         app:layout_constraintEnd_toEndOf="@id/image1"
         app:layout_constraintTop_toBottomOf="@id/image1"
         app:layout_constraintBottom_toTopOf="@id/image1"/>
@@ -34,10 +34,10 @@
         android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Jalandhar"
+        android:text="@string/jalandhar"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginLeft="98dp"
+        android:layout_marginStart="98dp"
         app:layout_constraintTop_toBottomOf="@id/tv1"
         app:layout_constraintBottom_toTopOf="@id/tv1"
         android:layout_marginTop="55dp"/>
@@ -45,10 +45,10 @@
         android:id="@+id/tv3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="(Re-Accreditedwith‘A+’grade by NAAC)"
+        android:text="@string/re_accreditedwith_a_grade_by_naac"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginLeft="98dp"
+        android:layout_marginStart="98dp"
         app:layout_constraintTop_toBottomOf="@id/tv2"
         app:layout_constraintBottom_toTopOf="@id/tv2"
         android:layout_marginTop="55dp"/>
@@ -56,11 +56,11 @@
         android:id="@+id/tv4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Login"
+        android:text="@string/login"
         android:textStyle="bold"
-        android:textSize="50dp"
+        android:textSize="50sp"
         android:gravity="center"
-        android:textColor="#D45E5E"
+        android:textColor="#395886"
         app:layout_constraintTop_toBottomOf="@id/tv3"
         android:layout_marginTop="20dp"
         />
@@ -69,100 +69,104 @@
         android:id="@+id/tv5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Username"
-        android:textSize="12dp"
+        android:text="@string/username"
+        android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@id/tv4"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/edtemail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="enter your username"
+        android:hint="@string/enter_your_username"
         android:inputType="text"
-        android:text="user@gmail.com"
+        android:text="@string/user_gmail_com"
         android:textColorHint="#514E4E"
         android:backgroundTint="#979595"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/tv5"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"/>
     <TextView
         android:id="@+id/tv6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Roll Number"
-        android:textSize="12dp"
+        android:text="@string/roll_number"
+        android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@id/edtemail"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"/>
 
     <EditText
         android:id="@+id/edt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="enter Roll no."
+        android:hint="@string/enter_roll_no"
         android:visibility="gone"
         android:inputType="number"
         android:textColorHint="#514E4E"
         android:backgroundTint="#979595"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/tv6"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"/>
     <TextView
         android:id="@+id/tv7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="gone"
-        android:text="Password"
-        android:textSize="12dp"
+        android:text="@string/password"
+        android:textSize="12sp"
         app:layout_constraintTop_toBottomOf="@id/edt2"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"/>
 
     <EditText
         android:id="@+id/edtpassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="1234@"
-        android:text="12345678"
+        android:hint="@string/_1234"
+        android:text="@string/_12345678"
         android:textColorHint="#514E4E"
         android:backgroundTint="#979595"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/tv7"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"/>
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#D45E5E"
-        android:text="Login "
-        android:textColor="#FFDAB9"
-        android:textSize="20dp"
+        android:backgroundTint="#395886"
+        android:text="@string/login1"
+        android:textColor="#B1C9EF"
+        android:textSize="20sp"
         app:layout_constraintTop_toBottomOf="@+id/edtpassword"
         android:layout_marginTop="20dp"/>
     <TextView
         android:id="@+id/tv8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Forget Password?"
+        android:text="@string/forget_password"
         android:textStyle="bold"
-        android:textSize="15dp"
+        android:textSize="15sp"
+        android:layout_marginTop="@dimen/margin_20dp"
         app:layout_constraintTop_toBottomOf="@+id/btn1"
-        android:layout_marginLeft="215dp"/>
+        android:layout_marginStart="215dp"/>
 
     <TextView
         android:id="@+id/tv9"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Don't have an account?"
+        android:text="@string/don_t_have_an_account"
         app:layout_constraintTop_toBottomOf="@+id/tv8"
         android:layout_marginTop="95dp"
-        android:layout_marginLeft="100dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <TextView
         android:id="@+id/tvregister"
@@ -172,7 +176,7 @@
         app:layout_constraintEnd_toEndOf="@+id/tv9"
         app:layout_constraintBottom_toBottomOf="@+id/tv9"
         android:layout_marginLeft="250dp"
-        android:textColor="#D45E5E"/>
+        android:textColor="#395886"/>
 
 
 

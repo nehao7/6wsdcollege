@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBC4AB"
+    android:background="#B1C9EF"
     android:padding="10dp"
     tools:context=".activities.AchievementsActivity">
 
@@ -60,7 +60,7 @@
         android:textStyle="bold"
         android:textSize="50dp"
         android:gravity="center"
-        android:textColor="#D45E5E"
+        android:textColor="#395886"
         app:layout_constraintTop_toBottomOf="@id/tv3"
         android:layout_marginTop="20dp"
         />
